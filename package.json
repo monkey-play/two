@@ -1,0 +1,18 @@
+{
+  "name": "two",
+  "version": "0.1.0",
+  "description": "give you everything about TWO",
+  "main": "two.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:monkey-play/two.git"
+  },
+  "author": "Hunter",
+  "license": "ISC",
+  "keywords": [
+    "two"
+  ]
+}
