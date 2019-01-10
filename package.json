@@ -1,17 +1,20 @@
 {
   "name": "two",
+  "author": "Hunter",
+  "license": "MIT",
   "version": "0.1.0",
   "description": "give you everything about TWO",
   "main": "two.js",
+  "engines": {
+    "node": ">=8.11.3"
+  },
   "scripts": {
-    "test": "node test"
+    "test": "node test && echo ✔"
   },
   "repository": {
     "type": "git",
     "url": "git@github.com:monkey-play/two.git"
   },
-  "author": "Hunter",
-  "license": "ISC",
   "keywords": [
     "two"
   ]
