@@ -40,6 +40,14 @@
     return Math.sqrt(number);
   }
 
+  two.bigger = function (a, b) {
+    return a >= b ? a : b;
+  }
+
+  two.smaller = function (a, b) {
+    return a <= b ? a : b;
+  }
+
   if (typeof module !== 'undefined' && module.exports) {
     module.exports = two;
   } else if (typeof define === 'function' && define.amd) {

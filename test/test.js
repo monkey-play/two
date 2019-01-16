@@ -73,14 +73,29 @@ describe("return string", () => {
   });
 });
 
-describe("return unicode", function () {
-  it("It should be return ✌️", function () {
+describe("return unicode", () => {
+  it("It should be return ✌️", () => {
     assert.equal("✌️", two.peace());
   });
-  it("It should be return ✌️", function () {
+  it("It should be return ✌️", () => {
     assert.equal("✌️", two.victory());
   });
-  it("It should be return 👀", function () {
+  it("It should be return 👀", () => {
     assert.equal("👀", two.eyes());
+  });
+});
+
+describe("compare", () => {
+  it("return bigger", () => {
+    assert(2, two.bigger(1, 2));
+  });
+  it("return bigger", () => {
+    assert(10, two.bigger(10, 5));
+  });
+  it("return smaller", () => {
+    assert(1, two.bigger(1, 2));
+  });
+  it("return smaller", () => {
+    assert(5, two.bigger(10, 5));
   });
 });
