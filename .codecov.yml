@@ -1,0 +1,6 @@
+codecov:
+  strict_yaml_branch: master  # only use the latest copy on master branch
+
+coverage:
+  round: up
+  range: "60...100"
