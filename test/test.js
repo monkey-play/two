@@ -128,17 +128,17 @@ describe("calculate", () => {
   it("return add result", () => {
     assert(3, two.add(1));
   });
-  it("return minus result", () => {
-    assert(5, two.minus(10, 5));
+  it("return subtract result", () => {
+    assert(5, two.subtract(10, 5));
   });
-  it("return minus result", () => {
-    assert(8, two.minus(10));
+  it("return subtract result", () => {
+    assert(8, two.subtract(10));
   });
-  it("return minus result", () => {
-    assert(-1, two.minus(1, 2));
+  it("return subtract result", () => {
+    assert(-1, two.subtract(1, 2));
   });
-  it("return minus result", () => {
-    assert(-1, two.minus(1));
+  it("return subtract result", () => {
+    assert(-1, two.subtract(1));
   });
   it("return multiply result", () => {
     assert(2, two.times());

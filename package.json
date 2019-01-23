@@ -1,5 +1,5 @@
 {
-  "name": "two",
+  "name": "monkey-two",
   "author": "lq920320",
   "license": "MIT",
   "version": "0.1.0",
@@ -13,10 +13,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:monkey-play/two.git"
+    "url": "https://github.com/monkey-play/two.git"
   },
   "keywords": [
-    "two"
+    "two", "monkey-two"
   ],
   "devDependencies": {
     "mocha": "^5.2.0"

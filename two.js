@@ -60,7 +60,7 @@
     return a + b;
   }
 
-  two.minus = function(a, b = 2) {
+  two.subtract = function(a, b = 2) {
     return a - b;
   }
 

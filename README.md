@@ -33,14 +33,14 @@ two.add(3); // 3 + 2 = 5
 two.add(10, 5); // 10 + 5 = 15
 ```
 
-##### Minus（减法）
+##### Subtraction（减法）
 
 ```
 two() - two(); // 2 - 2 = 0
-two.minus(1); // 1 - 2 = -1
-two.minus(2); // 2 - 2 = 0
-two.minus(3); // 3 - 2 = 1
-two.minus(10, 5); // 10 - 5 = 5
+two.subtract(1); // 1 - 2 = -1
+two.subtract(2); // 2 - 2 = 0
+two.subtract(3); // 3 - 2 = 1
+two.subtract(10, 5); // 10 - 5 = 5
 ```
 
 ##### Multiplication（乘法）
