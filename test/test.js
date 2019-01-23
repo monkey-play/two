@@ -83,6 +83,18 @@ describe("return unicode", () => {
   it("It should be return 👀", () => {
     assert.equal("👀", two.eyes());
   });
+  it("It should be return 🕑", () => {
+    assert.equal("🕑", two.oclock());
+  });
+  it("It should be return 🛌", () => {
+    assert.equal("🛌", two.oclockStatus());
+  });
+  it("It should be return 🛌", () => {
+    assert.equal("🛌", two.oclockStatus("am"));
+  });
+  it("It should be return 👨‍💻", () => {
+    assert.equal("👨‍💻", two.oclockStatus("pm"));
+  });
 });
 
 describe("compare", () => {
@@ -97,5 +109,41 @@ describe("compare", () => {
   });
   it("return smaller", () => {
     assert(5, two.bigger(10, 5));
+  });
+});
+
+describe("calculate", () => {
+  it("return add result", () => {
+    assert(3, two.add(1, 2));
+  });
+  it("return add result", () => {
+    assert(3, two.add(1));
+  });
+  it("return minus result", () => {
+    assert(5, two.minus(10, 5));
+  });
+  it("return minus result", () => {
+    assert(8, two.minus(10));
+  });
+  it("return minus result", () => {
+    assert(-1, two.minus(1, 2));
+  });
+  it("return minus result", () => {
+    assert(-1, two.minus(1));
+  });
+  it("return multiply result", () => {
+    assert(2, two.times());
+  });
+  it("return multiply result", () => {
+    assert(10, two.times(5));
+  });
+  it("return divide result", () => {
+    assert(2.5, two.divide(5));
+  });
+  it("return divide result", () => {
+    assert(1, two.divide(2));
+  });
+  it("return divide result", () => {
+    assert(0.5, two.divide());
   });
 });
