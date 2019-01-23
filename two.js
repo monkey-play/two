@@ -3,7 +3,7 @@
 
   two.upHigh = function() { return "²"; }
   two.downLow = function() { return "₂"; }
-  two.roman = function() { return "II"; }
+  two.roman = function() { return "Ⅱ"; }
   two.chinese = function(type) {
     switch(type) {
       case "pinyin": return "èr";

@@ -5,7 +5,10 @@ describe("return number", () => {
   it("test passed", () => {
     assert.equal(2, two());
   });
-  it("Two should not out not two.", () => {
+  it("test passed", () => {
+    assert.equal(2, two.valueOf());
+  });
+  it("Two should not equal.", () => {
     assert.notEqual(3, two());
   });
   it("test passed", () => {
@@ -39,6 +42,9 @@ describe("return number", () => {
     assert.equal(2, two.base(8));
   });
   it("test passed", () => {
+    assert.equal(01, two.baseOf());
+  });
+  it("test passed", () => {
     assert.equal(10, two.baseOf(2));
   });
   it("test passed", () => {
@@ -60,7 +66,7 @@ describe("return string", () => {
     assert.equal("₂", two.downLow());
   });
   it("test passed", () => {
-    assert.equal("II", two.roman());
+    assert.equal("Ⅱ", two.roman());
   });
   it("test passed", () => {
     assert.equal("二", two.chinese());
@@ -70,6 +76,9 @@ describe("return string", () => {
   });
   it("test passed", () => {
     assert.equal("贰", two.chinese("financial"));
+  });
+  it("test passed", () => {
+    assert.equal("TWO", two.upperCase());
   });
 });
 
