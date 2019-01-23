@@ -59,7 +59,7 @@ two.times(10, 5); // 10 * 5 = 50
 two() / two(); // 2 / 2 = 1
 two.divide(1); // 1 / 2 = 0.5
 two.divide(2); // 2 / 2 = 1
-two.divide(3); // 3 / 2 = 6
+two.divide(3); // 3 / 2 = 1.5
 two.divide(10, 5); // 10 / 5 = 2
 ```
 
@@ -67,7 +67,7 @@ two.divide(10, 5); // 10 / 5 = 2
 
 ```
 two.power(); // 2
-two.power(3); //8
+two.power(3); // 8
 two.power(10); // 1024
 ```
 
