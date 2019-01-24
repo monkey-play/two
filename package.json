@@ -2,7 +2,7 @@
   "name": "monkey-two",
   "author": "lq920320",
   "license": "MIT",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "give you everything about TWO",
   "main": "two.js",
   "engines": {

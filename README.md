@@ -8,11 +8,21 @@ Everything about "2"!
 
 # Installation（安装）
   
-  **WIP（施工中）**
+  ```
+  npm i monkey-two
+  ```
 
 # Quick start（快速开始）
 
-  **WIP（施工中）**
+#### Require the module
+
+```
+const two = require('monkey-two');
+```
+OR
+```
+import * as two from "monkey-two";
+```
 
 ### What you can do with it? （取你所需）
 
