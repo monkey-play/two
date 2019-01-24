@@ -80,6 +80,27 @@ describe("return string", () => {
   it("test passed", () => {
     assert.equal("TWO", two.upperCase());
   });
+  it("test passed", () => {
+    assert.equal("2", two.repeat());
+  });
+  it("test passed", () => {
+    assert.equal("22222", two.repeat(5));
+  });
+  it("test passed", () => {
+    assert.equal("2222222222", two.repeat(10));
+  });
+  it("test passed", () => {
+    assert.equal("周二", two.dayOfWeek());
+  });
+  it("test passed", () => {
+    assert.equal("Monday", two.dayOfWeek('EN'));
+  });
+  it("test passed", () => {
+    assert.equal("二月", two.monthOfYear());
+  });
+  it("test passed", () => {
+    assert.equal("February", two.monthOfYear('EN'));
+  });
 });
 
 describe("return unicode", () => {
@@ -154,5 +175,35 @@ describe("calculate", () => {
   });
   it("return divide result", () => {
     assert(0.5, two.divide());
+  });
+  it("return power result", () => {
+    assert.equal(2, two.power());
+  });
+  it("return power result", () => {
+    assert.equal(0.5, two.power(-1));
+  });
+  it("return power result", () => {
+    assert.equal(32, two.power(5));
+  });
+  it("return power result", () => {
+    assert.equal(1024, two.power(10));
+  });
+  it("return square result", () => {
+    assert.equal(4, two.square(16));
+  });
+  it("return square result", () => {
+    assert.equal(1, two.square());
+  });
+  it("return square result", () => {
+    assert.equal(32, two.square(1024));
+  });
+});
+
+describe("return boolean", () => {
+  it("The number is 2", () => {
+    assert.equal(true, two.isTwo(2));
+  });
+  it("The number is not 2", () => {
+    assert.equal(false, two.isTwo(3));
   });
 });

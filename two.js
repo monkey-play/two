@@ -12,7 +12,21 @@
     }
   }
   two.japanese = function() { return '二'; }
+  two.english = function() { return 'two'; }
   two.upperCase = function() { return "TWO"; }
+  
+  two.dayOfWeek = function(area) {
+    if(area && area.toLowerCase() !== 'cn') {
+      return 'Monday';
+    }
+    return '周二';
+  }
+  two.monthOfYear = function(area) {
+    if(area && area.toLowerCase() !== 'cn') {
+      return 'February';
+    }
+    return '二月';
+  }
 
   two.power = function(number = 1) {
     return Math.pow(two(), number);
@@ -72,9 +86,13 @@
     return number / two();
   }
 
-  two.isTwo = function(number) { 
+  two.isTwo = function(number = 2) { 
     return number === two(); 
   };
+
+  two.repeat = function(number = 1) {
+    return ('' + two()).repeat(number);
+  }
 
   two.valueOf = two;
 

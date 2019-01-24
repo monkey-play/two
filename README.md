@@ -71,17 +71,12 @@ two.power(3); // 8
 two.power(10); // 1024
 ```
 
-##### Different sorts of 2（花式输出2）
+##### Square（开平方）
 
 ```
-two.upHigh(); // ²
-two.downLow(); // ₂
-two.roman(); // Ⅱ
-two.chinese(); // 二
-two.chinese("pinyin"); // èr
-two.chinese("financial"); // 贰
-two.japanese(); // 二
-two.upperCase(); // TWO
+two.square(); // 1
+two.square(4); // 2
+two.square(1024); // 32
 ```
 
 ##### Different radices（基数）
@@ -96,6 +91,32 @@ two.baseOf(); // 01  # default 1
 two.baseOf(10); // 1010
 ```
 
+##### Different sorts of 2（花式输出2）
+
+```
+two.upHigh(); // ²
+two.downLow(); // ₂
+two.roman(); // Ⅱ
+two.chinese(); // 二
+two.chinese("pinyin"); // èr
+two.chinese("financial"); // 贰
+two.japanese(); // 二
+two.english(); // two
+two.upperCase(); // TWO
+two.repeat();  // 2
+two.repeat(5); // 22222
+two.repeat(10); // 2222222222
+```
+
+##### Date（日期相关）
+
+```
+two.dayOfWeek(); // 周二
+two.dayOfWeek("EN"); // Monday
+two.monthOfYear(); // 二月
+two.monthOfYear("EN"); // February
+```
+
 ##### Unicode emoji（emoji表情）
 
 ```
@@ -106,6 +127,21 @@ two.oclock(); // 🕑
 two.oclockStatus(); // 🛌 # default 2:00 am, you should be sleeping in the bed.（默认是凌晨两点，你应该在睡觉。）
 two.oclockStatus("PM"); // 👨‍💻 # 2:00 pm, you shoulding be coding.（传参表示下午两点，你居然不在写代码？！）
 two.oclockStatus("pm"); // 👨‍💻
+```
+
+##### Assert（判断）
+
+```
+two.isTwo();  // true
+two.isTwo(2); // true
+two.isTwo(3); // false
+```
+
+##### Compare（比较）
+
+```
+two.bigger(1, 2); // 2
+two.smaller(1, 2); // 1
 ```
 
 # Development（开发）
