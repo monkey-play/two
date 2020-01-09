@@ -19,6 +19,6 @@
     "two", "monkey-two"
   ],
   "devDependencies": {
-    "mocha": "^6.1.4"
+    "mocha": "^7.0.0"
   }
 }
